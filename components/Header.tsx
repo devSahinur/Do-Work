@@ -9,6 +9,25 @@ const Header = () => {
     return (
         <header className="">
             <div className="flex flex-col md:flex-row items-center p-5 bg-gray-500/10 rounded-b-2xl">
+                
+                <div
+                className="
+                absolute
+                top-0
+                left-0
+                w-full
+                h-96
+                bg-gradient-to-br
+                from-purple-600
+                to-purple-400
+                rounded-b-2xl
+                filter
+                blur-3xl
+                opacity-50
+                -z-50
+                "
+                />
+
                 <div className="flex items-center justify-center">
                     <Image
                         src="/logo.png"
@@ -34,7 +53,7 @@ const Header = () => {
                     <Avatar name="Sahinur Islam" size="50" round={true} className="ml-2" />
                 </div>
             </div>
-            <div className="flex items-center justify-center px-5 md:py-5">
+            <div className="flex items-center justify-center px-5 py-2 md:py-5">
                 <p className="flex items-center p-5 text-sm font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic max-w-3xl text-purple-600">
                     <UserCircleIcon className="inline-block h-10 w-10 text-purple-600 mr-1 " />
                     GPT is summarising the your for the day...
